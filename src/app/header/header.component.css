@@ -1,0 +1,29 @@
+.header{
+    padding: 10px 20px;
+    background: green;
+    font-style: italic;
+    font-size: larger;
+}
+
+.title{
+    color: orange;
+    text-decoration: none;
+}
+.login{
+    color:pink;
+    float: right;
+    padding-top: 10px ;
+    padding-left: 10px;
+    text-align: right;
+    text-align-last: right;
+    font-size: 16px;
+}
+.register,.add-post{
+    color:pink;
+    float: right;
+    padding-top: 10px ;
+    padding-left: 10px;
+    text-align: right;
+    text-align-last: right;
+    font-size: 16px;
+}

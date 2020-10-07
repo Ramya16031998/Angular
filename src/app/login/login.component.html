@@ -1,0 +1,29 @@
+<br>
+<br>
+<div class="container d-flex justify-content-center" style="width: 50%">
+    <form [formGroup]="loginForm" style=" width: 50%;">
+        <p class="h4 text-center mb-4 mt-4" style="font-size: xx-large; font-style: normal;">Sign In</p>
+
+        <div>
+            <input type="text" id="email" [formControlName]="'email'" placeholder="Email" class="form-control">
+            <div *ngIf="loginForm.get('email').touched">
+                <label *ngIf=" loginForm.get('email').hasError('pattern')" style="font-size: 16px; color: red;">Invalid Pattern</label>
+                <label *ngIf=" loginForm.get('email').hasError('required')" style="font-size: 16px; color: red;">Email field required</label>
+        
+            </div>
+        </div>
+        <br>
+        
+        <div>
+            <input type="password" id="password" [formControlName]="'password'" placeholder="Password" class="form-control">
+            <div *ngIf="loginForm.get('password').touched">
+                <label *ngIf=" loginForm.get('password').hasError('required')" style="font-size: 16px; color: red;">Password field required</label>
+        
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary btn-block mt-4" [disabled]="!loginForm.valid">Sign In</button>
+        </div>
+
+    </form>
+</div>
