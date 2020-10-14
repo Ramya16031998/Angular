@@ -6,6 +6,6 @@ export class RegisterPayoad {
     password: String;
     contact_number: String;
     description: String;
-    linkedin_url: String;
+    lined_in_url: String;
     status: String;
 }

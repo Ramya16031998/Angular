@@ -39,7 +39,7 @@ export class RegisterComponent implements OnInit {
       first_name: '',
       last_name: '',
       contact_number: '',
-      linkedin_url: '',
+      lined_in_url: '',
       status: 'ACTIVE',
       username: '',
       description: ''
@@ -62,8 +62,7 @@ export class RegisterComponent implements OnInit {
 
     this.authService.register(this.registerPayload).subscribe(data => {
       alert("User register successfully. Now go to login page");
-      // this.router.navigateByUrl("/login");
-      this.router.navigateByUrl("/register-success");
+      this.router.navigateByUrl("/login");
     }, error => {
       alert("error occurred");
     });

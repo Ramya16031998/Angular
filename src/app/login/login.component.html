@@ -1,7 +1,7 @@
 <br>
 <br>
 <div class="container d-flex justify-content-center" style="width: 50%">
-    <form [formGroup]="loginForm" style=" width: 50%;">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <p class="h4 text-center mb-4 mt-4" style="font-size: xx-large; font-style: normal;">Sign In</p>
 
         <div>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div>
-            <button class="btn btn-primary btn-block mt-4" [disabled]="!loginForm.valid">Sign In</button>
+            <button class="btn btn-primary btn-block mt-4 " [disabled]="!loginForm.valid">Sign In</button>
         </div>
 
     </form>

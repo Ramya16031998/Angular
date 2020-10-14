@@ -17,6 +17,8 @@ import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
 import { PostComponent } from './post/post.component';
 import { RegisterSuccessComponent } from './register-success/register-success.component';
+import { DraftComponent } from './draft/draft.component';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
 
  
 
@@ -30,7 +32,9 @@ import { RegisterSuccessComponent } from './register-success/register-success.co
     AddPostComponent,
     HomeComponent,
     PostComponent,
-    RegisterSuccessComponent
+    RegisterSuccessComponent,
+    DraftComponent,
+    UpdateProfileComponent
     
   ],
   imports: [
@@ -48,7 +52,8 @@ import { RegisterSuccessComponent } from './register-success/register-success.co
       {path: 'register', component: RegisterComponent},
       {path: 'add-post', component: AddPostComponent},
       {path: 'home', component: HomeComponent},
-      {path: 'post/:id', component: PostComponent},
+      {path: 'post/:id', component: PostComponent}, { path: 'update-profile', component: UpdateProfileComponent },
+      { path: 'draft', component: DraftComponent },
       {path: 'register-success', component: RegisterSuccessComponent}
     ]),
     ValidateEqualModule,
